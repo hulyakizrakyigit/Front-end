@@ -17,7 +17,7 @@ let months = ["Ocak","Şubat","Mart","Nisan","Mayıs","Haziran","Temmuz","Ağust
 time = `${ new Date().getDate()}
  ${months[new Date().getMonth()]} ${days[new Date().getDay()]} günü
  saat
-${ new Date().getHours()}:${new Date().getMinutes()}:${new Date().getSeconds()}'de/da
+${ new Date().getHours()}:${new Date().getMinutes()}:${new Date().getSeconds()}'de
  `
 
 
