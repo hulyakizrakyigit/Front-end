@@ -12,10 +12,13 @@ let clock = document.querySelector("#myClock");
 myName.innerHTML = ` ${username}`
 
 let days = ["Pazar", "Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma", "Cumartesi"]
+let months = ["Ocak","Şubat","Mart","Nisan","Mayıs","Haziran","Temmuz","Ağustos","Eylül","Ekim","Kasım","Aralık"]
 
-time = ` 
-${ new Date().getHours()}:${new Date().getMinutes()}:${new Date().getSeconds()}
-${days[new Date().getDay()]}  `
+time = `${ new Date().getDate()}
+ ${months[new Date().getMonth()]} ${days[new Date().getDay()]} günü
+ saat
+${ new Date().getHours()}:${new Date().getMinutes()}:${new Date().getSeconds()}'de/da
+ `
 
 
 clock.innerHTML = `${time}`
